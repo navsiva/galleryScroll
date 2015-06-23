@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="doc-Oh-nFd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="W6b-HV-j81">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -18,6 +18,10 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P0g-c0-ugY">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hJW-Vo-deB" appends="YES" id="cd2-9F-CsB"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -26,12 +30,20 @@
                             <constraint firstAttribute="centerY" secondItem="P0g-c0-ugY" secondAttribute="centerY" id="rcc-Qt-kvt"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="mXQ-an-jIb"/>
                     <connections>
                         <outlet property="galleryView" destination="P0g-c0-ugY" id="Q9H-JH-myj"/>
+                        <segue destination="doc-Oh-nFd" kind="show" identifier="showDetails" id="GDW-qx-3RJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="hJW-Vo-deB">
+                    <connections>
+                        <action selector="userTappedView:" destination="vXZ-lx-hvc" id="f5P-TU-vPO"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="1031" y="422"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="DFr-jI-1o9">
@@ -61,7 +73,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HsL-KR-sjw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="923" y="428"/>
+            <point key="canvasLocation" x="1735" y="428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="teb-AP-TaX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W6b-HV-j81" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xkC-Hy-hEd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="EJV-mz-teE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ERO-Z9-FQj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-426" y="357"/>
         </scene>
     </scenes>
 </document>

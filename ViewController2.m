@@ -12,8 +12,6 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView2;
 
 @property (nonatomic, weak) UIView *                framingView;
-@property (nonatomic, weak) NSLayoutConstraint *    framingViewHeight;
-@property (nonatomic, weak) NSLayoutConstraint *    framingViewWidth;
 
 @end
 

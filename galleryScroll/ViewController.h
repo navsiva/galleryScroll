@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController<UIScrollViewDelegate>
 
-
 @end
 
+@interface ViewController2 : UIViewController
+
+
+@end

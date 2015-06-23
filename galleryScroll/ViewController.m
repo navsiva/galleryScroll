@@ -48,5 +48,23 @@
     
         return [self.galleryView.subviews firstObject];
 }
+- (IBAction)userTappedView:(UITapGestureRecognizer *)sender {
+    //ViewController2 *two = segue.destinationViewController;
+    //two.delegate = self;
+   [ self performSegueWithIdentifier:@"showDetails" sender:sender];
+     //sender should be image and passed to prepare for segue
+    
+    NSLog(@"tapped");
+}
+
+
+
+
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+
+
+
+}
 
 @end
