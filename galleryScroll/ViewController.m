@@ -23,7 +23,7 @@
     NSArray *gallery = [NSArray arrayWithObjects:
                           [UIImage imageNamed:@"Lighthouse-in-Field.jpg"], [UIImage imageNamed:@"Lighthouse-night.jpg"], [UIImage imageNamed:@"Lighthouse.jpg"], nil];
                        
-    CGFloat xPosition = 0;
+    CGFloat xPosition = 1;
     
     for (UIImage *image in gallery ) {
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:(CGRect) {xPosition,0,self.galleryView.frame.size.width, self.galleryView.frame.size.height}];
