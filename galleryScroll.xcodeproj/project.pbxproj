@@ -14,6 +14,9 @@
 		9247E8FF1B399C590075219C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9247E8FE1B399C590075219C /* Images.xcassets */; };
 		9247E9021B399C590075219C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9247E9001B399C590075219C /* LaunchScreen.xib */; };
 		9247E90E1B399C590075219C /* galleryScrollTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9247E90D1B399C590075219C /* galleryScrollTests.m */; };
+		9247E9201B39A4D60075219C /* Lighthouse-in-Field.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9247E91D1B39A4D60075219C /* Lighthouse-in-Field.jpg */; };
+		9247E9211B39A4D60075219C /* Lighthouse-night.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9247E91E1B39A4D60075219C /* Lighthouse-night.jpg */; };
+		9247E9221B39A4D60075219C /* Lighthouse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9247E91F1B39A4D60075219C /* Lighthouse.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		9247E9071B399C590075219C /* galleryScrollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = galleryScrollTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9247E90C1B399C590075219C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9247E90D1B399C590075219C /* galleryScrollTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = galleryScrollTests.m; sourceTree = "<group>"; };
+		9247E91D1B39A4D60075219C /* Lighthouse-in-Field.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lighthouse-in-Field.jpg"; sourceTree = "<group>"; };
+		9247E91E1B39A4D60075219C /* Lighthouse-night.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lighthouse-night.jpg"; sourceTree = "<group>"; };
+		9247E91F1B39A4D60075219C /* Lighthouse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lighthouse.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 		9247E8E51B399C590075219C = {
 			isa = PBXGroup;
 			children = (
+				9247E91D1B39A4D60075219C /* Lighthouse-in-Field.jpg */,
+				9247E91E1B39A4D60075219C /* Lighthouse-night.jpg */,
+				9247E91F1B39A4D60075219C /* Lighthouse.jpg */,
 				9247E8F01B399C590075219C /* galleryScroll */,
 				9247E90A1B399C590075219C /* galleryScrollTests */,
 				9247E8EF1B399C590075219C /* Products */,
@@ -201,7 +210,10 @@
 			files = (
 				9247E8FD1B399C590075219C /* Main.storyboard in Resources */,
 				9247E9021B399C590075219C /* LaunchScreen.xib in Resources */,
+				9247E9211B39A4D60075219C /* Lighthouse-night.jpg in Resources */,
+				9247E9221B39A4D60075219C /* Lighthouse.jpg in Resources */,
 				9247E8FF1B399C590075219C /* Images.xcassets in Resources */,
+				9247E9201B39A4D60075219C /* Lighthouse-in-Field.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
