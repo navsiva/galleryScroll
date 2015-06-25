@@ -11,7 +11,8 @@
 @interface ViewController2 ()
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView2;
 
-@property (nonatomic, weak) UIView *                framingView;
+@property (nonatomic, weak) UIImageView *framingView;
+
 
 @end
 
@@ -20,9 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIImage *image2 = [UIImage imageNamed:@"Lighthouse-in-Field.jpg"];
+   // UIImage *image2 = [UIImage imageNamed:@"Lighthouse-in-Field.jpg"];
     UIView *scrollView2 = self.scrollView2;
-    UIImageView *framingView = [[UIImageView alloc] initWithImage:image2];
+    UIImageView *framingView = [[UIImageView alloc] initWithImage:self.zoomImage];
     framingView.translatesAutoresizingMaskIntoConstraints = NO;
     framingView.backgroundColor = [UIColor greenColor];
     [scrollView2 addSubview:framingView];
@@ -70,9 +71,8 @@
 //    
 //                               
 //    imageView2.image = image;
-    //[self.scrollView2 addSubview:framingView];
+    [self.scrollView2 addSubview:framingView];
     
-    self.framingView = framingView;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -80,7 +80,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
+- (UIImageView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
     
     return self.framingView;
 }

@@ -7,12 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController2.h"
 
 @interface ViewController : UIViewController<UIScrollViewDelegate>
 
-@end
-
-@interface ViewController2 : UIViewController
-
 
 @end
+

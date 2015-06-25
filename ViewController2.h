@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
+
 
 @interface ViewController2 : UIViewController<UIScrollViewDelegate>
 
-
+@property(nonatomic, strong) UIImage *zoomImage;
 
 @end
 
